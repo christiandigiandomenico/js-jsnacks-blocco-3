@@ -1,3 +1,11 @@
+const buttonElement = document.querySelector("#start-game")
+
+buttonElement.addEventListener("click", function () {
+
+    document.getElementById("result").innerHTML = nuovoArray
+
+})
+
 function tagliaArray(array, posizioneMin, posizioneMax) {
 
     const newArray = [];
@@ -10,5 +18,3 @@ function tagliaArray(array, posizioneMin, posizioneMax) {
 
 const arrayNumeri = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const nuovoArray = tagliaArray(arrayNumeri, 5, 9);
-
-console.log(nuovoArray)
