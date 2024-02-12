@@ -9,14 +9,13 @@ buttonElement.addEventListener("click", function () {
 })
 
 function textUppercase(string) {
-
     let words = string.split(" ");
 
-    let wordUppercase = words.map(function (parola) {
-        return parola.charAt(0).toUpperCase() + parola.slice(1);
-    });
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
 
-    let nuovaStringa = wordUppercase.join(" ");
+    let nuovaStringa = words.join(" ");
 
     return nuovaStringa;
 }
